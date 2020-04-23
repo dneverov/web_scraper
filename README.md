@@ -31,8 +31,14 @@ yarn add bootstrap@3.4.1 jquery popper.js
 ```
 
 Pay attention to:
-- config/webpack/environment.js
-- app/javascript/packs/application.js
+- [config/webpack/environment.js](config/webpack/environment.js)
+- [app/javascript/packs/application.js](app/javascript/packs/application.js)
+
+<!--
+FYI See (Bootstrap, jQuery @ Rails 6 - Webpack):
+- https://blog.capsens.eu/how-to-write-javascript-in-rails-6-webpacker-yarn-and-sprockets-cdf990387463
+- https://gorails.com/forum/install-bootstrap-with-webpack-with-rails-6-beta
+-->
 
 > ### Further Steps
 
