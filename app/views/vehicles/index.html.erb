@@ -38,6 +38,8 @@
   </tbody>
 </table>
 
+<%= will_paginate @vehicles, renderer: BootstrapPagination::Rails %>
+
 <br>
 
 <%= link_to 'New Vehicle', new_vehicle_path %>
