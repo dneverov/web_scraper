@@ -1,4 +1,4 @@
-<%= form_with(model: vehicle, local: true) do |form| %>
+<%= form_with(model: vehicle, local: true, class: "form-horizontal") do |form| %>
   <% if vehicle.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
@@ -11,47 +11,67 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+  <div class="form-group">
+    <%= form.label :title, class: "col-xs-2 control-label" %>
+    <div class="col-xs-3">
+      <%= form.text_field :title, class: "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :stock_type %>
-    <%= form.text_field :stock_type %>
+  <div class="field form-group">
+    <%= form.label :stock_type, class: "col-xs-2 control-label" %>
+    <div class="col-xs-3">
+      <%= form.text_field :stock_type, class: "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :exterior_color %>
-    <%= form.text_field :exterior_color %>
+  <div class="form-group">
+    <%= form.label :exterior_color, class: "col-xs-2 control-label" %>
+    <div class="col-xs-3">
+      <%= form.text_field :exterior_color, class: "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :interior_color %>
-    <%= form.text_field :interior_color %>
+  <div class="form-group">
+    <%= form.label :interior_color, class: "col-xs-2 control-label" %>
+    <div class="col-xs-3">
+      <%= form.text_field :interior_color, class: "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :transmission %>
-    <%= form.text_field :transmission %>
+  <div class="form-group">
+    <%= form.label :transmission, class: "col-xs-2 control-label" %>
+    <div class="col-xs-3">
+      <%= form.text_field :transmission, class: "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :drivetrain %>
-    <%= form.text_field :drivetrain %>
+  <div class="form-group">
+    <%= form.label :drivetrain, class: "col-xs-2 control-label" %>
+    <div class="col-xs-3">
+      <%= form.text_field :drivetrain, class: "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :price %>
-    <%= form.number_field :price %>
+  <div class="form-group">
+    <%= form.label :price, class: "col-xs-2 control-label" %>
+    <div class="col-xs-2">
+      <%= form.number_field :price, class: "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :miles %>
-    <%= form.number_field :miles %>
+  <div class="form-group">
+    <%= form.label :miles, class: "col-xs-2 control-label" %>
+    <div class="col-xs-2">
+      <%= form.number_field :miles, class: "form-control" %>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-2">
+      <%= form.submit "Update Vehicle", class: "btn btn-primary" %>
+    </dev>
   </div>
+  <div class="clearfix"></div>
 <% end %>
